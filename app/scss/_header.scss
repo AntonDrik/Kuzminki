@@ -1,4 +1,21 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0 0;
+  z-index: 999;
+
+  &__logo {
+    & img {
+      width: 115px;
+    }
+  }
+
+  &-active {
+    background-color: #e6e6e6de;
+  }
+
   &__info {
     display: flex;
     justify-content: space-between;
@@ -7,6 +24,39 @@
     &-item {
       display: flex;
       flex-direction: column;
+
+      & span {
+        font-family: 'corbel-regular';
+      }
+    }
+  }
+
+  &__phone {
+    &:before {
+      width: 18px;
+      height: 18px;
+      background-image: url('../img/_src/sprite.png');
+      background-position: -30px -4px;
+    }
+  }
+
+  &__address {
+    &:before {
+      top: 10px;
+      transform: none;
+      width: 18px;
+      height: 35px;
+      background-image: url(../img/_src/sprite.png);
+      background-position: -6px -4px;
+    }
+  }
+
+  &__mail {
+    &:before {
+      width: 18px;
+      height: 14px;
+      background-image: url(../img/_src/sprite.png);
+      background-position: -54px -5px;
     }
   }
 }

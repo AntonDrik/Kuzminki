@@ -1,4 +1,5 @@
 @import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("corbel-regular", "../fonts/Corbel-Regular/CORBEL");
+@include font-face("corbel-bold", "../fonts/Corbel-Bold/CORBELB");
+@include font-face("lora-regular", "../fonts/Lora-Regular/Lora-Regular");

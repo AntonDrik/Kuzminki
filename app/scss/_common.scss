@@ -1,0 +1,131 @@
+.btn {
+    background-color: #6f0730;
+    border: none;
+    border-radius: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.btn__standart {
+    width: 225px;
+    height: 45px;
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: #65042a;
+        box-shadow: 0px 5px 9px 0px #65042a;
+    }
+}
+
+.btn-hidden {
+    display: none;
+}
+
+.big__title {
+    font-family: 'lora-regular';
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.list__item-img {
+    position: relative;
+    padding-left: 25px;
+    line-height: 30px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+main {
+    padding-top: 125px;
+}
+
+.section-padding {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.main-divider {
+    padding: 100px 0;
+    background-image: url('../img/_src/main-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        color: #fff;
+        & span,
+        & p {
+            font-family: 'lora-regular';
+        }
+        & span {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        & p {
+            font-size: 15px;
+            margin-bottom: 90px;
+            line-height: 30px;
+        }
+    }
+}
+
+.main {
+
+    &-about {
+
+        &__info {
+            & p {
+                font-family: 'corbel-regular';
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+        }
+        &__btn {
+            margin-top: 70px;   
+        }
+    }
+
+
+    &-advantages {
+
+        &__item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__dish {
+            &-wrapper {
+                width: 170px;
+                height: 170px;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url('../img/_src/dish.png');
+            }
+        }
+
+        &__title {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+    }
+}
