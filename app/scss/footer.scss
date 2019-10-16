@@ -1,3 +1,12 @@
 .footer {
   padding: 20px 0 40px;
+  &__img {
+
+  }
+  &__ul{
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
 }
