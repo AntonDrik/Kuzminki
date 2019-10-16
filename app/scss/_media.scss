@@ -29,6 +29,15 @@
     .main-about__img {
         display: none;
     }
+    .main-advantages__item {
+        padding-bottom: 40px;
+    }
+    .main-categories__item {
+        padding: 20px;
+    }
+    .main-categories__title {
+        font-size: 15px;
+    }
 }
 
 // ≥768px
@@ -59,11 +68,19 @@
         justify-content: space-between;
         align-items: center;
     }
+    .main-categories__item {
+        width: 75%;
+    }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+    .main-categories__item {
+        width: 100%;
+    }
+    .main-categories__title {
+        font-size: 20px;
+    }
 }
 
 
