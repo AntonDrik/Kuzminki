@@ -9,12 +9,21 @@
         display: inline-block;
         padding-right: 25px;
     }
+    .articles-card {
+        max-width: 300px;
+    }
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
     main {
         padding-top: 170px;
+    }
+    table {
+        font-size: 14px;
+    }
+    .title__big {
+        font-size: 30px;
     }
     .header__logo {
         display: flex;
@@ -28,6 +37,16 @@
     }
     .btn-hidden {
         display: inline-block;
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+    .articles-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .articles-card {
+        max-width: 400px;
     }
     .main-about__img {
         display: none;
@@ -73,6 +92,10 @@
     }
     .main-categories__item {
         width: 75%;
+    }
+
+    .grid {
+        justify-content: center;
     }
 
     .hidden {
