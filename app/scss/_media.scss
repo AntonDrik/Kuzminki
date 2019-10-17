@@ -5,7 +5,10 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+	.footer__item-list {
+        display: inline-block;
+        padding-right: 25px;
+    }
 }
 
 // ≥992px
@@ -70,6 +73,10 @@
     }
     .main-categories__item {
         width: 75%;
+    }
+
+    .hidden {
+        display: none;
     }
 }
 
