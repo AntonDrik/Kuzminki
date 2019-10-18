@@ -101,6 +101,14 @@
     .hidden {
         display: none;
     }
+    .catalog-title {
+        font-size: 20px;
+    }
+    .prev-arrow,
+    .next-arrow {
+        width: 135px;
+        height: 35px;
+    }
 }
 
 // ≥576px
@@ -110,6 +118,21 @@
     }
     .main-categories__title {
         font-size: 20px;
+    }
+    .pagination {
+        &__item {
+            padding: 5px;
+            font-size: 12px;
+            &:not(:first-child):not(:last-child) {
+                width: 30px;
+                height: 30px;
+            }
+            &:first-child,
+            &:last-child{
+                width: 60px;
+                height: 30px;
+            }
+        }
     }
 }
 
