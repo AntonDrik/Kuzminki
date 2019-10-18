@@ -59,6 +59,25 @@ body {
     }
 }
 
+.breadcrumbs {
+    display: flex;
+    padding-bottom: 40px;
+    & a {
+        font-family: 'corbel-regular';
+
+        &:not(:last-child) {
+            cursor: pointer;
+            &:after {
+                content: '>';
+            }
+        }
+    }
+    &__main {
+        color: $standart-color;
+
+    }
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -177,6 +196,8 @@ body {
         background-color: #ffffff;
         max-width: 260px;
         max-height: 290px;
+        margin-bottom: 25px;
+
         &:hover {
             border: 1px solid $standart-color;
         }
@@ -188,22 +209,24 @@ body {
     }
 }
 
-.breadcrumbs {
-    display: flex;
-    padding-bottom: 40px;
-    & a {
-        font-family: 'corbel-regular';
-
-        &:not(:last-child) {
-            cursor: pointer;
-            &:after {
-                content: '>';
-            }
-        }
-    }
-    &__main {
+.text-block {
+    & h3 {
+        font-family: 'corbel-bold';
+        font-size: 20px;
         color: $standart-color;
+    }
 
+    & p {
+        font-family: 'corbel-regular';
+        font-size: 16px;
+        color: #000;
+        line-height: 27px;
+        padding-bottom: 50px;
+        margin: 0;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -489,6 +512,8 @@ main {
     &-card {
         max-width: 270px;
         background-color: transparent;
+        border: none;
+        border-radius: 0;
 
         &__title {
             font-family: 'corbel-regular';
@@ -535,6 +560,27 @@ main {
                 background-position: -77px -4px;
                 width: 25px;
                 height: 25px;
+            }
+        }
+    }
+}
+
+.vacation {
+    &-divider {
+        &__content {
+            position: relative;
+            max-width: 340px;
+            margin: 0 auto;
+
+            & h2 {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                transform: translateY(-50%);
+                padding: 0;
+                font-family: 'lora-regular';
+                font-weight: 400;
             }
         }
     }
