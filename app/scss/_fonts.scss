@@ -1,5 +1,7 @@
 @import "_mixins/font-face";
 
+@include font-face("OpenSans-Regular", "../fonts/OpenSans-Regular/OpenSans-Regular");
+
 @include font-face("corbel-regular", "../fonts/Corbel-Regular/CORBEL");
 @include font-face("corbel-bold", "../fonts/Corbel-Bold/CORBELB");
 @include font-face("lora-regular", "../fonts/Lora-Regular/Lora-Regular");

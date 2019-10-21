@@ -274,7 +274,8 @@ a {
         height: 50px;
         position: relative;
         margin-bottom: 40px;
-        & input {
+        & input,
+        & textarea {
             border: none;
             width: 100%;
             height: 100%;
@@ -283,6 +284,54 @@ a {
             &:focus {
                 outline: none;
             }
+        }
+
+        &-textarea {
+            height: 230px;
+        }
+    }
+    &__submit {
+        width: 100%;
+        height: 50px;
+        font-weight: 700;
+    }
+    &__disclaimer {
+        font-family: 'OpenSans-Regular';
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 0;
+
+        & a {
+            color: initial;
+            text-decoration: underline;
+        }
+    }
+}
+
+.modal {
+    &-header {
+        & h5 {
+            text-align: center;
+            width: 100%;
+            margin-top: 25px;
+        }
+
+        & .close {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            width: 25px;
+            height: 25px;
+            opacity: 1;
+            border-radius: 50%;
+            background-color: $standart-color;
+            color: #fff;
+            line-height: 0;
+            font-size: 18px;
+            font-weight: normal;
+            text-shadow: none;
         }
     }
 }
@@ -664,6 +713,10 @@ main {
     &__info {
         & span {
             margin-bottom: 30px;
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
         }
     }
     &__map {
