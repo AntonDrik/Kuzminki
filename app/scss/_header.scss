@@ -5,6 +5,7 @@
   right: 0;
   padding: 10px 0 0;
   z-index: 999;
+  background-color: white;
 
   &__logo {
     & img {
@@ -20,6 +21,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &-contacts {
+      display: flex;
+      & .header__info-item:last-child {
+        padding-left: 50px;
+      }
+    }
 
     &-item {
       display: flex;

@@ -19,21 +19,24 @@
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-sm-12 header__logo">
-                <img src="img/_src/logo.png" alt="">
-                <button class="btn btn__standart btn-hidden">заказать звонок</button>
+            <div class="col-md-3 col-sm-12 header__logo">
+                <a href="index.html">
+                    <img src="img/_src/logo.png" alt="">
+                </a>
             </div>
-            <div class="col-lg-9 col-sm-12">
+            <div class="col-md-9 col-sm-12">
                 <div class="header__info">
-                    <div class="header__info-item">
-                        <span class="header__address list__item-img">г. Москва, ул. Петровская, д. 135<br> корпус 13.</span>
+                    <div class="header__info-contacts">
+                        <div class="header__info-item">
+                            <span class="header__address list__item-img">г. Москва, ул. Петровская, д. 135<br> корпус 13.</span>
+                        </div>
+                        <div class="header__info-item">
+                            <span class="header__phone list__item-img">+7 916 123-45-67</span>
+                            <span class="header__mail list__item-img">Mail@mail.ru</span>
+                        </div>
                     </div>
-                    <div class="header__info-item">
-                        <span class="header__phone list__item-img">+7 916 123-45-67</span>
-                        <span class="header__mail list__item-img">Mail@mail.ru</span>
-                    </div>
-                    <div class="header__info-item">
-                        <button class="btn btn__standart">заказать звонок</button>
+                    <div class="header__info-item header__info-call-btn">
+                        <button class="btn btn__standart" data-toggle="modal" data-target="#modal">заказать звонок</button>
                     </div>
 
                 </div>
@@ -45,7 +48,7 @@
                             <span class="menu-mobile__bar-3"></span>
                             <p>Меню</p>
                         </button>
-                        <span class="menu-mobile__phone">+7 916 123-45-67</span>
+                        <button class="btn btn__standart btn__menu-mobile" data-toggle="modal" data-target="#modal">заказать звонок</button>
                     </div>
                     <ul id="menu" class="menu">
                         <li class="menu__item">
@@ -54,22 +57,22 @@
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="aboutUs.html" class="menu__link">
+                            <a href="catalog.html" class="menu__link">
                                 <span>ассортимент</span>
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="service.html" class="menu__link">
+                            <a href="articles.html" class="menu__link">
                                 <span>новости</span>
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="park.html" class="menu__link">
+                            <a href="sertificats.html" class="menu__link">
                                 <span>сертификаты</span>
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="review.html" class="menu__link">
+                            <a href="contacts.html" class="menu__link">
                                 <span>контакты</span>
                             </a>
                         </li>
@@ -79,6 +82,7 @@
         </div>
     </div>
 </header>
+
 <main>
     <section class="catalog-divider divider">
         <img src="img/_src/catalog-img.png" alt="">
@@ -421,6 +425,11 @@
         </div>
     </section>
 </main>
+
+<div class="to-top">
+    <img src="img/_src/to-top.png" alt="">
+</div>
+
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -429,27 +438,27 @@
             </div>
             <div class="col-lg-auto col-md-6 footer__menu footer__item hidden">
                 <ul class="footer__ul">
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Новости</a></li>
-                    <li><a href="">Контакты</a></li>
-                    <li><a href="">Сертификаты</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="articles.html">Новости</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="sertificats.html">Сертификаты</a></li>
                 </ul>
             </div>
             <div class="col-lg-auto col-md-6 footer__item hidden">
                 <ul class="footer__ul">
-                    <li><a href="">Вареные колбасы и ветчины</a></li>
-                    <li><a href="">Сосиски с сардельки</a></li>
-                    <li><a href="">Варено-копченые и полукапченые колбасы</a></li>
-                    <li><a href="">Сырокопченые и сыровяленые колбаски</a></li>
-                    <li><a href="">Заливные, ливер, субпродукты</a></li>
+                    <li><a href="catalog.html">Вареные колбасы и ветчины</a></li>
+                    <li><a href="catalog.html">Сосиски с сардельки</a></li>
+                    <li><a href="catalog.html">Варено-копченые и полукапченые колбасы</a></li>
+                    <li><a href="catalog.html">Сырокопченые и сыровяленые колбаски</a></li>
+                    <li><a href="catalog.html">Заливные, ливер, субпродукты</a></li>
                 </ul>
             </div>
             <div class="col-lg-auto col-md-6 footer__item hidden">
                 <ul class="footer__ul">
-                    <li><a href="">Деликатесы и копчености</a></li>
-                    <li><a href="">Шашлык</a></li>
-                    <li><a href="">Консервы</a></li>
-                    <li><a href="">Полуфабрикаты замороженные</a></li>
+                    <li><a href="catalog.html">Деликатесы и копчености</a></li>
+                    <li><a href="catalog.html">Шашлык</a></li>
+                    <li><a href="catalog.html">Консервы</a></li>
+                    <li><a href="catalog.html">Полуфабрикаты замороженные</a></li>
                 </ul>
             </div>
             <div class="col-xl-auto col-lg-12 col-sm-6 footer__item">
@@ -462,7 +471,37 @@
         </div>
     </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLongTitle">Обратный звонок</h1>
+                <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <label class="form__label modal-label">
+                        <input type="text" placeholder="Имя">
+                    </label>
+                    <label class="form__label modal-label">
+                        <input type="text" placeholder="Телефон">
+                    </label>
+                    <button class="btn btn__standart modal-submit">отправить</button>
+                    <div class="modal-disclaimer">
+                        <p class="form__disclaimer">Нажимая "Отправить" вы даете согласие на обработку персональных данных и соглашаетесь с
+                            <a href="textPage.html">пользовательским соглашением и политикой конфиденциальности.</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="js/scripts.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

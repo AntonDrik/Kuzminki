@@ -10,6 +10,15 @@
   &__item {
     position: relative;
     display: inline-block;
+
+    &:hover {
+      background-color: #00000021;
+    }
+
+    & a:hover {
+      color: black;
+      text-decoration: none;
+    }
   }
 
   &__link {
@@ -19,6 +28,7 @@
     text-decoration: none;
     color: black;
     position: relative;
+
 
     &>span {
       position: relative;
@@ -41,6 +51,9 @@
     border: 0;
     cursor: pointer;
     background-color: transparent;
+    &:focus {
+      outline: none;
+    }
 
     &>span {
       position: absolute;
