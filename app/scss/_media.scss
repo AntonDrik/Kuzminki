@@ -99,6 +99,9 @@
         justify-content: center;
         padding-bottom: 10px;
     }
+    .articles__title {
+        padding-bottom: 40px;
+    }
     .header__info-contacts {
         display: flex;
         justify-content: space-between;
@@ -170,6 +173,12 @@
     }
     .title__big {
         text-align: center;
+    }
+    .to-show {
+        display: block;
+    }
+    .to-hidden {
+        display: none;
     }
     .menu,
     .menu__item{
