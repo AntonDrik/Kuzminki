@@ -96,11 +96,14 @@
             </div>
             <div class="slider-header">
                 <button class="prev-arrow btn btn__white">Назад</button>
-                <h1 class="title__big section-title catalog-title">Полуфабрикаты замороженные</h1>
+                <div class="catalog-slider__title">
+                    <h1 class="title__big section-title catalog-title">Полуфабрикаты замороженные</h1>
+                    <h1 class="title__big section-title catalog-title">Полуфабрикаты размороженные</h1>
+                </div>
                 <button class="next-arrow btn btn__white">Вперед</button>
             </div>
-
             <div class="catalog-slider">
+                <div class="product-category">
                     <div class="card product-card">
                         <div class="card__img">
                             <a href="product.html"><img src="img/_src/bread.png" alt=""></a>
@@ -261,6 +264,8 @@
                             </a>
                         </div>
                     </div>
+                </div>
+                <div class="product-category">
                     <div class="card product-card">
                         <div class="card__img">
                             <a href="product.html"><img src="img/_src/bread.png" alt=""></a>
@@ -421,7 +426,23 @@
                             </a>
                         </div>
                     </div>
+                </div>
             </div>
+            <button class="btn btn__standart btn__show-more">загрузить ещё</button>
+        </div>
+    </section>
+    <section class="product-describe section-padding">
+        <div class="container">
+            <h1 class="title__big section-title">Заголовок</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi ducimus est exercitationem nobis optio provident
+                quas, reiciendis temporibus. Culpa cumque dolore ipsam nesciunt tenetur!
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ex labore omnis quas quisquam reprehenderit.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolor ducimus esse exercitationem illo illum iure, magnam mollitia
+                neque nisi nostrum nulla, officia, quia quisquam quo rem sequi sint tenetur.
+            </p>
         </div>
     </section>
 </main>
@@ -436,7 +457,7 @@
             <div class="col-lg-2 col-sm-6 footer__img footer__item">
                 <img src="img/_src/logo.png" alt="">
             </div>
-            <div class="col-lg-auto col-md-6 footer__menu footer__item hidden">
+            <div class="col-lg-auto col-md-6 footer__menu footer__item to-hidden">
                 <ul class="footer__ul">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="articles.html">Новости</a></li>
@@ -444,7 +465,7 @@
                     <li><a href="sertificats.html">Сертификаты</a></li>
                 </ul>
             </div>
-            <div class="col-lg-auto col-md-6 footer__item hidden">
+            <div class="col-lg-auto col-md-6 footer__item to-hidden">
                 <ul class="footer__ul">
                     <li><a href="catalog.html">Вареные колбасы и ветчины</a></li>
                     <li><a href="catalog.html">Сосиски с сардельки</a></li>
@@ -453,7 +474,7 @@
                     <li><a href="catalog.html">Заливные, ливер, субпродукты</a></li>
                 </ul>
             </div>
-            <div class="col-lg-auto col-md-6 footer__item hidden">
+            <div class="col-lg-auto col-md-6 footer__item to-hidden">
                 <ul class="footer__ul">
                     <li><a href="catalog.html">Деликатесы и копчености</a></li>
                     <li><a href="catalog.html">Шашлык</a></li>
@@ -502,6 +523,5 @@
 </div>
 
 <script src="js/scripts.min.js"></script>
-<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

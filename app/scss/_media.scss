@@ -16,6 +16,9 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+    .main {
+        padding-top: 185px;
+    }
     table {
         font-size: 14px;
     }
@@ -162,6 +165,9 @@
     .main {
         padding-top: 305px;
     }
+    .divider {
+        padding: 50px 0;
+    }
     .btn__standart {
         width: 180px;
         height: 40px;
@@ -184,6 +190,9 @@
     .menu__item{
         margin: 0 -15px;
         padding: 0 15px;
+        & li:hover {
+            background-color: #00000021;
+        }
     }
     .product-divider__btn:before {
         left: 30px;
@@ -230,6 +239,26 @@
     }
     .articles__title {
         flex-direction: column;
+    }
+    .slider-header {
+        position: relative;
+
+        & .catalog-slider__title {
+            margin-bottom: 50px;
+            width: 100%;
+        }
+    }
+    .prev-arrow,
+    .next-arrow {
+        position: absolute;
+        bottom: 0;
+        width: 100px;
+    }
+    .prev-arrow {
+        left: 0;
+    }
+    .next-arrow {
+        right: 0;
     }
 }
 
