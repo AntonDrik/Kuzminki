@@ -14,7 +14,8 @@
   }
 
   &-active {
-    background-color: #e6e6e6de;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
   }
 
   &__info {
@@ -53,7 +54,7 @@
       top: 10px;
       transform: none;
       width: 18px;
-      height: 35px;
+      height: 46px;
       background-image: url(../img/_src/sprite.png);
       background-position: -6px -4px;
     }

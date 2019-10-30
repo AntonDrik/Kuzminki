@@ -8,6 +8,7 @@
 	.footer__item-list {
         display: inline-block;
         padding-right: 25px;
+        vertical-align: top;
     }
     .articles-card {
         max-width: 300px;
@@ -37,6 +38,10 @@
                 padding-left: 0;
             }
         }
+    }
+    .footer__img {
+        text-align: center;
+        padding-bottom: 20px;
     }
     .btn-hidden {
         display: inline-block;
@@ -85,6 +90,9 @@
             padding-right: 0;
         }
     }
+    .product-category {
+        justify-content: space-around;
+    }
 }
 
 // ≥768px
@@ -93,7 +101,7 @@
         padding-top: 245px;
     }
     .header {
-        background-color: #e6e6e6de;
+        background-color: #ffffff;
     }
     .header__info-call-btn {
         display: none;
@@ -110,7 +118,12 @@
         justify-content: space-between;
         width: 100%;
     }
-
+    .footer__item-list {
+        display: block;
+        width: 250px;
+        margin: 0 auto;
+        padding-right: 0;
+    }
     .menu {
         flex-direction: column;
         display: none;
