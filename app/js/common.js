@@ -35,7 +35,16 @@ $(function() {
 			$('#menu').slideToggle();
 		});
 
+
 		$('.catalog-slider__title').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			infinite: false,
+			asNavFor: '.catalog-slider'
+		});
+
+		$('.catalog-divider').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: false,
@@ -48,7 +57,7 @@ $(function() {
 			slidesToScroll:1,
 			arrows: true,
 			infinite: false,
-			asNavFor: '.catalog-slider__title',
+			asNavFor: '.catalog-slider__item',
 			prevArrow: $('.prev-arrow'),
 			nextArrow: $('.next-arrow'),
 			responsive: [

@@ -113,7 +113,7 @@ a {
 
 .breadcrumbs {
     display: flex;
-    padding-bottom: 40px;
+    padding-bottom: 40px !important;
     & a {
         font-family: 'corbel-regular';
 
@@ -617,6 +617,15 @@ main {
             cursor: pointer;
             transition: all 0.5s ease;
 
+            & a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                height: 100%;
+                padding-top: 70px;
+            }
+
             &:hover {
                 box-shadow: inset 0 1px 40px 0 #000;
             }
@@ -632,6 +641,10 @@ main {
             }
         }
         &__title {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
             padding-bottom: 10px;
             font-size: 17px;
             color: #ffffff;
@@ -832,8 +845,8 @@ main {
 
 .catalog {
     &-divider {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
         & img {
             width: 100%;
         }
