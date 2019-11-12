@@ -1,3 +1,7 @@
+.main-menu {
+  width: 100%;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -42,7 +46,7 @@
 
 .menu-mobile {
   display: none;
-
+  height: 55px;
   &__bar {
     position: relative;
     width: 85px;

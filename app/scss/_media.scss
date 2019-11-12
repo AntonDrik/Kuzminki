@@ -18,7 +18,19 @@
 // ≥992px
 @include media-breakpoint-down(md) {
     .main {
-        padding-top: 185px;
+        padding-top: 125px;
+    }
+    .main-divider {
+        padding: 50px 0;
+        &__content {
+            & span {
+                font-size: 27px;
+            }
+            & p {
+                font-size: 17px;
+                margin-bottom: 40px;
+            }
+        }
     }
     table {
         font-size: 14px;
@@ -38,6 +50,9 @@
                 padding-left: 0;
             }
         }
+    }
+    .header__mail {
+        margin-left: 20px;
     }
     .footer__img {
         text-align: center;
@@ -59,6 +74,9 @@
     .main-about__img {
         display: none;
     }
+    .main-about__info p:first-of-type {
+        margin-top: 30px;
+    }
     .main-advantages__item {
         padding-bottom: 40px;
     }
@@ -67,6 +85,9 @@
     }
     .main-categories__title {
         font-size: 15px;
+    }
+    .main-about__btn {
+        margin-top: 30px;
     }
     .section-padding {
         padding: 50px 0;
@@ -98,25 +119,25 @@
 // ≥768px
 @include media-breakpoint-down(sm) {
     .main {
-        padding-top: 245px;
+        padding-top: 180px;
     }
     .header {
         background-color: #ffffff;
+        padding: 5px 0 5px;
     }
     .header__info-call-btn {
         display: none;
     }
     .header__logo {
         justify-content: center;
-        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 0;
     }
     .articles__title {
         padding-bottom: 40px;
     }
     .header__info-contacts {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
+        display: none !important;
     }
     .footer__item-list {
         display: block;
@@ -168,18 +189,20 @@
     .section-title {
         margin-bottom: 30px;
     }
-    .title__big {
-        font-size: 27px;
-    }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-    .main {
-        padding-top: 305px;
-    }
     .divider {
         padding: 50px 0;
+    }
+    .main-divider {
+        &__content {
+           text-align: center;
+            & button {
+                margin: 0 auto;
+            }
+        }
     }
     .btn__standart {
         width: 180px;
@@ -237,15 +260,8 @@
     .section-title {
         margin-bottom: 20px;
     }
-    .title__big {
-        font-size: 25px;
-    }
     .footer__img {
         text-align: center;
-    }
-    .header__info-contacts {
-        flex-direction: column;
-        align-items: center;
     }
     .header__info-item {
         min-width: 260px;
