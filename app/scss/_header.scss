@@ -14,9 +14,9 @@
   }
 
   &-active {
-    background-color: #ffffff;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     padding: 10px 0;
+    background-color: #fffffff2;
 
     & .menu {
       border-top: none;
@@ -45,8 +45,12 @@
       display: flex;
       flex-direction: column;
 
-      & span {
+      & span, a {
         font-family: 'corbel-regular';
+      }
+
+      & a {
+        cursor: pointer;
       }
     }
   }

@@ -37,7 +37,6 @@
     &>span {
       position: relative;
       font-family: 'corbel-bold';
-      font-weight: 700;
       text-transform: capitalize;
       font-size: 15px;
     }
@@ -47,6 +46,14 @@
 .menu-mobile {
   display: none;
   height: 55px;
+
+  & img {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+
   &__bar {
     position: relative;
     width: 85px;
@@ -64,13 +71,30 @@
       left: 0;
       width: 30px;
       height: 3px;
-      background-color: #000;
+      background-color: $standart-color;
       cursor: pointer;
+      transition: all 0.5s ease;
     }
 
     &>p {
       text-align: right;
     }
+
+    &.open {
+      & span {
+        top: 10px;
+      }
+
+      & .menu-mobile__bar-1 {
+        transform: rotate(45deg);
+      }
+
+      & .menu-mobile__bar-2,
+      & .menu-mobile__bar-3 {
+        transform: rotate(-45deg);
+      }
+    }
+
   }
 
   &__bar-1 {
